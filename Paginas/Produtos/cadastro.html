@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuardaTreco</title>
+    <link rel="icon" type="image/png" href="/Assets/Logo.png">
+</head>
+<body>
+    <a href="/Paginas/home.html"><img src="/Assets/Logo.png" width="20"></a>
+
+    <h1>Cadastro de Produtos da GuardaTreco</h1>
+
+    <a href="index.html">Voltar</a>
+
+    <form action="index.html" method="get">
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" id="campo-nome" required minlength="3" name="nome">
+        </div>
+        <div>
+            <label for="campo-medida">Unidade de Medida</label>
+            <select name="unidade-medida" id="campo-medida" required>
+                <option value="UN">Unidade</option>
+                <option value="DZN">Dezena</option>
+                <option value="CEN">Centena</option>
+            </select>
+        </div>
+        <div>
+            <label for="campo-preco">Preço</label>
+            <input type="number" name="preco" id="campo-preco" required step=".01">
+        </div>
+        <div>
+            <label for="campo-categoria">Categoria</label> 
+            <select name="categoria" id="campo-categoria" required>
+                <option value="1">Camisas</option>
+                <option value="2">Suéteres</option>
+                <option value="3">Ternos</option>
+                <option value="4">Blazer</option>
+                <option value="5">Calças</option>
+            </select>
+        </div>
+        <div>
+            <label for="campo-fornecedor">Fornecedor</label>
+            <input type="text" name="fornecedor" id="campo-fornecedor" required minlength="3">
+        </div>
+        <div>
+            <label for="campo-descricao">Descrição</label>
+            <textarea name="campo-descricao" name="descricao" id="campo-descricao" rows="4" cols="60"></textarea>
+        </div>
+        <div>
+            <label for="campo-importado">Importado?</label>
+            <div>
+                <input type="radio" name="importado" id="select-yes" required value="True">
+                <label for="select-yes">Yes</label>
+                <input type="radio" name="importado" id="select-no" required value="False">
+                <label for="select-no">No</label>
+            </div>
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>

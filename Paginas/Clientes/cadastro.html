@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuardaTreco</title>
+    <link rel="icon" type="image/png" href="/Assets/Logo.png">
+</head>
+<body>
+    <a href="/Paginas/home.html"><img src="/Assets/Logo.png" width="20"></a>
+
+    <h1>Cadastro de CLientes da GuardaTreco</h1>
+
+    <a href="index.html">Voltar</a>
+
+    <form action="index.html" method="get">
+    <div>
+        <label for="campo-nome">Nome</label>
+        <input type="text" id="campo-nome" minlength="3" required>
+    </div>
+    <div>
+        <label for="campo-cpf">CPF</label>
+        <input type="text" id="campo-cpf" required minlength="11" maxlength="11">
+    </div>
+    <div>
+        <label for="campo-aniversario">Data Aniversario</label>
+        <input type="date" id="campo-aniversario" required>
+    </div>
+    <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
